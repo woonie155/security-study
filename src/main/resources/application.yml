@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security_study?serverTimezone=Asia/Seoul
+    username: security
+    password: s1234
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      use_sql_comments: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  security:
+    user:
+      name: user
+      password: 1234
+
+  devtools:
+    livereload:
+      enabled: true
+
+logging.level:
+  org.hibernate.SQL: debug
